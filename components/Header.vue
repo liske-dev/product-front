@@ -3,23 +3,39 @@
     <div class="header-container">
       <div class="header-logo">Суши Пицца</div>
       <div class="header-menu">
-        <button class="header-items">Пицца</button>
-        <button class="header-items">Сеты</button>
+        <button class="header-items"><a class="header-href" href="#pizza">Пицца</a></button>
+        <button class="header-items"><a class="header-href" href="#sets">Сеты</a></button>
         <button class="header-items">Роллы</button>
         <button class="header-items">Темпура</button>
         <button class="header-items">Запечёные</button>
         <button class="header-items">Фри</button>
         <button class="header-items">Напитки</button>
-        <button class="header-items header-bascet">
+        <button class="header-items header-bascet" @click="handlerBascetShow">
           Ваш заказ 
           <img class="header-bascet-logo" src="@/assets/svg/bascet.svg" width="19" height="19" alt="bascet" />
         </button>
       </div>
     </div>
+    <BasketDrawer v-show="bascetShow" @closed-basket-drawer="handlerClosedBasketDrawer"/>
   </div>
 </template>
 <script>
 export default {
+  name: 'Header',
+  data(){
+    return {
+      bascetShow: false
+    }
+  },
+  methods: {
+    handlerBascetShow () {
+      this.bascetShow=true
+      this.$emit('bascet-show', 'hidden')
+    },
+    handlerClosedBasketDrawer() {
+      this.bascetShow=false
+    }
+  }
 }
 </script>
 
@@ -56,6 +72,11 @@ export default {
   cursor: pointer;
   outline: none;
   border: none;
+}
+
+.header-href {
+  text-decoration: none;
+  color: black;
 }
 
 .header-bascet {

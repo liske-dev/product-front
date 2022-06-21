@@ -1,13 +1,13 @@
 <template>
-  <div class="pizza" id="pizza">
-    <div class="pizza-title">Пицца</div>
-    <div class="pizza-body">
-      <div class="pizza-items" v-for="(item, index) in items" :key="index">
+  <div class="sets" id="sets">
+    <div class="sets-title">Сеты</div>
+    <div class="sets-body">
+      <div class="sets-items" v-for="(item, index) in items" :key="index">
         <img :src="item.img"/>
-        <div class="pizza-info">
-          <div class="pizza-name">{{item.name}}</div>
-          <div class="pizza-prise">{{item.prise}}</div>
-          <div class="pizza-bascet">В корзину</div>
+        <div class="sets-info">
+          <div class="sets-name">{{item.name}}</div>
+          <div class="sets-prise">{{item.prise}}</div>
+          <div class="sets-bascet">В корзину</div>
         </div>
       </div>
     </div>
@@ -16,47 +16,47 @@
 </template>
 <script>
 export default {
-  name: 'Pizza',
+  name: 'Sets',
   data(){
     return {
       items: [
         {
-          img: 'https://susi.pizza/wp-content/uploads/2022/05/bolgarskaya_optimized-300x300.png',
+          img: 'https://susi.pizza/wp-content/uploads/2022/05/to-chto-nado-scaled-1-300x300.jpg',
           name: 'Ассорти',
           prise: '₽510.00'
         },
         {
-          img: 'https://susi.pizza/wp-content/uploads/2022/05/bolgarskaya_optimized-300x300.png',
+          img: 'https://susi.pizza/wp-content/uploads/2022/05/to-chto-nado-scaled-1-300x300.jpg',
           name: 'Ассорти',
           prise: '₽510.00'
         },
         {
-          img: 'https://susi.pizza/wp-content/uploads/2022/05/bolgarskaya_optimized-300x300.png',
+          img: 'https://susi.pizza/wp-content/uploads/2022/05/to-chto-nado-scaled-1-300x300.jpg',
           name: 'Ассорти',
           prise: '₽510.00'
         },
         {
-          img: 'https://susi.pizza/wp-content/uploads/2022/05/bolgarskaya_optimized-300x300.png',
+          img: 'https://susi.pizza/wp-content/uploads/2022/05/to-chto-nado-scaled-1-300x300.jpg',
           name: 'Ассорти',
           prise: '₽510.00'
         },
         {
-          img: 'https://susi.pizza/wp-content/uploads/2022/05/bolgarskaya_optimized-300x300.png',
+          img: 'https://susi.pizza/wp-content/uploads/2022/05/to-chto-nado-scaled-1-300x300.jpg',
           name: 'Ассорти',
           prise: '₽510.00'
         },
         {
-          img: 'https://susi.pizza/wp-content/uploads/2022/05/bolgarskaya_optimized-300x300.png',
+          img: 'https://susi.pizza/wp-content/uploads/2022/05/to-chto-nado-scaled-1-300x300.jpg',
           name: 'Ассорти',
           prise: '₽510.00'
         },
         {
-          img: 'https://susi.pizza/wp-content/uploads/2022/05/bolgarskaya_optimized-300x300.png',
+          img: 'https://susi.pizza/wp-content/uploads/2022/05/to-chto-nado-scaled-1-300x300.jpg',
           name: 'Ассорти',
           prise: '₽510.00'
         },
         {
-          img: 'https://susi.pizza/wp-content/uploads/2022/05/bolgarskaya_optimized-300x300.png',
+          img: 'https://susi.pizza/wp-content/uploads/2022/05/to-chto-nado-scaled-1-300x300.jpg',
           name: 'Ассорти',
           prise: '₽510.00'
         },
@@ -66,27 +66,26 @@ export default {
 }
 </script>
 <style scoped>
-.pizza {
+.sets {
   max-width: 1290px;
   background-color: white;
   margin: auto;
-  margin-top: 160px;
   border-radius: 4px;
   padding: 32px;
 }
-.pizza-title {
+.sets-title {
   font-weight: 700;
   font-size: 28px;
   margin-bottom: 20px;
   text-align: center;
 }
-.pizza-body {
+.sets-body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.pizza-items {
+.sets-items {
   flex: 1 -1;
   padding-top: 18px;
   margin: auto;
@@ -94,24 +93,24 @@ export default {
   box-shadow: 0 15px 15px -10px rgb(0 0 0 / 5%);
 }
 
-.pizza-info {
+.sets-info {
   padding: 16px;
 }
 
-.pizza-name {
+.sets-name {
   padding-top: 8px;
   margin-bottom: 8px;
   font-size: 12px;
   font-weight: 500;
 }
 
-.pizza-prise {
+.sets-prise {
   margin-bottom: 8px;
   font-size: 10px;
   font-weight: 400;
 }
 
-.pizza-bascet {
+.sets-bascet {
   font-size: 12px;
   font-weight: 700;
 }
