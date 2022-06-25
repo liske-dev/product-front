@@ -10,8 +10,11 @@ export const getters = {
     return state.orderList
   },
   costAllOrders: state => {
-    return state.orderList.reduce(elem =>(4 + Number(elem.prise.slice(1)))
-    )
+    let sum = 0
+    for(const elem of state.orderList){
+      sum += Number(elem.prise.slice(1))
+    }
+    return sum
   }
 }
 

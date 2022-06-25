@@ -23,7 +23,7 @@
           </div>
           <div class="basket-drawer-total">
             <div class="basket-drawer-total-title">Подытог:</div>
-            <div class="basket-drawer-total-sum">₽000</div>
+            <div class="basket-drawer-total-sum">₽{{costAllOrders}}</div>
           </div>
           <div class="basket-drawer-order">
             <button class="basket-drawer-review">Просмотр корзины</button>
