@@ -7,7 +7,7 @@
         <div class="pizza-info">
           <div class="pizza-name">{{item.name}}</div>
           <div class="pizza-prise">{{item.prise}}</div>
-          <div class="pizza-bascet">В корзину</div>
+          <div class="pizza-bascet" @click="addOrder(item)">В корзину</div>
         </div>
       </div>
     </div>
@@ -62,6 +62,11 @@ export default {
         },
       ]
     }
+  },
+  methods: {
+    addOrder(order) {
+      this.$store.dispatch('addOrder', order)
+    }
   }
 }
 </script>
@@ -109,6 +114,7 @@ export default {
   margin-bottom: 8px;
   font-size: 10px;
   font-weight: 400;
+  color: rgb(45, 55, 72);
 }
 
 .pizza-bascet {

@@ -13,6 +13,7 @@
         <button class="header-items header-bascet" @click="handlerBascetShow">
           Ваш заказ 
           <img class="header-bascet-logo" src="@/assets/svg/bascet.svg" width="19" height="19" alt="bascet" />
+          <div class="header-bascet-orders">{{countOfOrders}}</div>
         </button>
       </div>
     </div>
@@ -20,8 +21,12 @@
   </div>
 </template>
 <script>
+import { mapGetters } from 'vuex'
 export default {
   name: 'Header',
+  computed: {
+    ...mapGetters(['countOfOrders']),
+    },
   data(){
     return {
       bascetShow: false
@@ -68,25 +73,35 @@ export default {
 .header-items {
   padding: 10px;
   font-size: 16px;
+  color: #4A5568;
   background-color: transparent;
   cursor: pointer;
   outline: none;
   border: none;
 }
-
 .header-href {
   text-decoration: none;
-  color: black;
+  color: #4A5568;
 }
-
 .header-bascet {
   position: relative;
-  padding-right: 29px;
+  padding-right: 45px;
 }
-
 .header-bascet-logo {
   position: absolute;
-  top: 10;
+  top: 10px;
+  right: 22px;
+}
+.header-bascet-orders {
+  position: absolute;
+  font-size: 10px;
+  line-height: 21px;
+  font-weight: 400;
+  top: 10px;
   right: 0;
+  border-radius: 50%;
+  background-color:#EDF2F7;
+  width: 21px;
+  height: 21px;
 }
 </style>

@@ -3,8 +3,15 @@ export const state = () => ({
 })
 
 export const getters = {
-  numberOfOrders: state => {
-    return state.orderList.length === 0
+  countOfOrders: state => {
+    return state.orderList.length
+  },
+  orderList: state => {
+    return state.orderList
+  },
+  costAllOrders: state => {
+    return state.orderList.reduce(elem =>(4 + Number(elem.prise.slice(1)))
+    )
   }
 }
 
