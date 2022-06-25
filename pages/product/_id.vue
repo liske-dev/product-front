@@ -18,7 +18,7 @@
       </div>
     </div>
     <div class="similar">
-      <div class="similar-title">Похожие товары</div>
+      <div class="similar-title h2">Похожие товары</div>
       <div class="similar-body">
         <div v-for="(item, index) in items" :key="index">
           <img :src="item.img"/>
@@ -154,8 +154,6 @@ export default {
   display: flex;
 }
 .similar-title {
-  font-weight: 700;
-  font-size: 28px;
   margin-bottom: 14px;
 }
 .similar-name {

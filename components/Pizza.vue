@@ -1,6 +1,6 @@
 <template>
   <div class="pizza" id="pizza">
-    <div class="pizza-title">Пицца</div>
+    <div class="pizza-title h1">Пицца</div>
     <div class="pizza-body">
       <div class="pizza-items" v-for="(item, index) in items" :key="index">
         <img :src="item.img"/>
@@ -80,8 +80,6 @@ export default {
   padding: 32px;
 }
 .pizza-title {
-  font-weight: 700;
-  font-size: 28px;
   margin-bottom: 20px;
   text-align: center;
 }

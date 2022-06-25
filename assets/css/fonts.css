@@ -1,4 +1,26 @@
 html {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+.h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color:rgb(26, 32, 44);
+}
+.h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color:rgb(26, 32, 44);
+}
+.h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color:rgb(45, 55, 72);
+}
 
+label {
+  color: rgb(74, 85, 104);
+  font-size: 15px;
+  font-weight: 700;
+  height: 36px;
+  line-height: 36px;
 }

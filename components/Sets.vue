@@ -1,6 +1,6 @@
 <template>
   <div class="sets" id="sets">
-    <div class="sets-title">Сеты</div>
+    <div class="sets-title h1">Сеты</div>
     <div class="sets-body">
       <div class="sets-items" v-for="(item, index) in items" :key="index">
         <img :src="item.img"/>
@@ -74,8 +74,6 @@ export default {
   padding: 32px;
 }
 .sets-title {
-  font-weight: 700;
-  font-size: 28px;
   margin-bottom: 20px;
   text-align: center;
 }
