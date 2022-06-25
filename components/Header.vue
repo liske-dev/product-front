@@ -3,8 +3,8 @@
     <div class="header-container">
       <div class="header-logo">Суши Пицца</div>
       <div class="header-menu">
-        <button class="header-items"><a class="header-href" href="#pizza">Пицца</a></button>
-        <button class="header-items"><a class="header-href" href="#sets">Сеты</a></button>
+        <button class="header-items"><a class="header-href" href="/#pizza">Пицца</a></button>
+        <button class="header-items"><a class="header-href" href="/#sets">Сеты</a></button>
         <button class="header-items">Роллы</button>
         <button class="header-items">Темпура</button>
         <button class="header-items">Запечёные</button>

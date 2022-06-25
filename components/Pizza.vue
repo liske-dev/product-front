@@ -3,7 +3,7 @@
     <div class="pizza-title h1">Пицца</div>
     <div class="pizza-body">
       <div class="pizza-items" v-for="(item, index) in items" :key="index">
-        <img :src="item.img"/>
+        <img :src="item.img" @click="$nuxt.$router.replace({ path: '/product/test '})" />
         <div class="pizza-info">
           <div class="pizza-name">{{item.name}}</div>
           <div class="pizza-prise">{{item.prise}}</div>
@@ -11,10 +11,10 @@
         </div>
       </div>
     </div>
-
   </div>
 </template>
 <script>
+import csv from 'csv-parser';
 export default {
   name: 'Pizza',
   data(){
@@ -23,45 +23,58 @@ export default {
         {
           img: 'https://susi.pizza/wp-content/uploads/2022/05/bolgarskaya_optimized-300x300.png',
           name: 'Ассорти',
-          prise: '₽510.00'
+          prise: '₽510.00',
+          ID: 1
         },
         {
           img: 'https://susi.pizza/wp-content/uploads/2022/05/bolgarskaya_optimized-300x300.png',
           name: 'Ассорти',
-          prise: '₽510.00'
+          prise: '₽510.00',
+          ID: 2
         },
         {
           img: 'https://susi.pizza/wp-content/uploads/2022/05/bolgarskaya_optimized-300x300.png',
           name: 'Ассорти',
-          prise: '₽510.00'
+          prise: '₽510.00',
+          ID: 3
         },
         {
           img: 'https://susi.pizza/wp-content/uploads/2022/05/bolgarskaya_optimized-300x300.png',
           name: 'Ассорти',
-          prise: '₽510.00'
+          prise: '₽510.00',
+          ID: 4
         },
         {
           img: 'https://susi.pizza/wp-content/uploads/2022/05/bolgarskaya_optimized-300x300.png',
           name: 'Ассорти',
-          prise: '₽510.00'
+          prise: '₽510.00',
+          ID: 5
         },
         {
           img: 'https://susi.pizza/wp-content/uploads/2022/05/bolgarskaya_optimized-300x300.png',
           name: 'Ассорти',
-          prise: '₽510.00'
+          prise: '₽510.00',
+          ID: 6
         },
         {
           img: 'https://susi.pizza/wp-content/uploads/2022/05/bolgarskaya_optimized-300x300.png',
           name: 'Ассорти',
-          prise: '₽510.00'
+          prise: '₽510.00',
+          ID: 7
         },
         {
           img: 'https://susi.pizza/wp-content/uploads/2022/05/bolgarskaya_optimized-300x300.png',
           name: 'Ассорти',
-          prise: '₽510.00'
+          prise: '₽510.00',
+          ID: 8
         },
       ]
     }
+  },
+  mounted() {
+    // var txtFile = new XMLHttpRequest();
+    // txtFile.open("GET", "file://d:/products.csv", true);
+    // console.log(txtFile)
   },
   methods: {
     addOrder(order) {

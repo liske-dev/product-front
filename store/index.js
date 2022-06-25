@@ -19,13 +19,19 @@ export const getters = {
 }
 
 export const mutations = {
-  ADD_ORDER(state, payload) {
-    state.orderList.push(payload)
+  ADD_ORDER(state, order) {
+    state.orderList.push(order)
+  },
+  DELETE_ORDER(state, idOrder) {
+    state.orderList = state.orderList.filter(elem => elem.ID != idOrder)
   }
 }
 
 export const actions = {
-  addOrder({ commit }, payload) {
-    commit('ADD_ORDER', payload)
+  addOrder({ commit }, order) {
+    commit('ADD_ORDER', order)
+  },
+  deleteOrder({ commit }, idOrder) {
+    commit('DELETE_ORDER', idOrder)
   }
 }

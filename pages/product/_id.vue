@@ -38,22 +38,26 @@ export default {
         {
           img: 'https://susi.pizza/wp-content/uploads/2022/05/bolgarskaya_optimized-300x300.png',
           name: 'Ассорти',
-          prise: '₽510.00'
+          prise: '₽510.00',
+          ID: 1,
         },
         {
           img: 'https://susi.pizza/wp-content/uploads/2022/05/bolgarskaya_optimized-300x300.png',
           name: 'Ассорти',
-          prise: '₽510.00'
+          prise: '₽510.00',
+          ID: 2,
         },
         {
           img: 'https://susi.pizza/wp-content/uploads/2022/05/bolgarskaya_optimized-300x300.png',
           name: 'Ассорти',
-          prise: '₽510.00'
+          prise: '₽510.00',
+          ID: 3,
         },
         {
           img: 'https://susi.pizza/wp-content/uploads/2022/05/bolgarskaya_optimized-300x300.png',
           name: 'Ассорти',
-          prise: '₽510.00'
+          prise: '₽510.00',
+          ID: 4,
         }
       ]
     }

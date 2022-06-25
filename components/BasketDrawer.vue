@@ -17,7 +17,7 @@
               <div class="basket-drawer-info-name">{{item.name}}</div>
               <div class="basket-drawer-info-prise">{{item.prise}}</div>
             </div>
-            <button class="basket-drawer-info-closed" @click="handlerClosed">
+            <button class="basket-drawer-info-closed" @click="handlerDeleteOrder(item.ID)">
               <img src="@/assets/svg/closed.svg" width="12" height="12" alt="bascet" />
             </button>
           </div>
@@ -26,8 +26,8 @@
             <div class="basket-drawer-total-sum">₽{{costAllOrders}}</div>
           </div>
           <div class="basket-drawer-order">
-            <button class="basket-drawer-review">Просмотр корзины</button>
-            <button class="basket-drawer-ordering">Оформление заказа</button>
+            <button class="basket-drawer-review" @click="$nuxt.$router.replace({ path: '/checkout'})">Просмотр корзины</button>
+            <button class="basket-drawer-ordering" @click="$nuxt.$router.replace({ path: '/cart'})">Оформление заказа</button>
           </div>
         </div>
       </div>
@@ -43,8 +43,10 @@ export default {
     },
   methods: {
     handlerClosed() {
-      console.log(this.costAllOrders)
       this.$emit('closed-basket-drawer')
+    },
+    handlerDeleteOrder(id) {
+      this.$store.dispatch('deleteOrder', id)
     }
   }
 }
