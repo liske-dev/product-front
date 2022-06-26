@@ -11,7 +11,7 @@
         <div class="product-description">{{selectedProduct['short-description']}}</div>
         <div class="product-bascet">
           <input class="product-bascet-quantity" v-model="quantity" type="number" min="1" step="1" max inputmode="numeric"/>
-          <button class="product-bascet-button">В корзину</button>
+          <button class="product-bascet-button" @click="addOrders(selectedProduct)">В корзину</button>
         </div>
         <div class="product-article">Артикул: {{selectedProduct.articul}}</div>
         <div class="product-category">Категория: {{selectedProduct.categories}}</div>
@@ -39,36 +39,15 @@ export default {
   data(){
     return {
       quantity: 1,
-      items: [
-        {
-          img: 'https://susi.pizza/wp-content/uploads/2022/05/bolgarskaya_optimized-300x300.png',
-          name: 'Ассорти',
-          prise: '₽510.00',
-          ID: 1,
-        },
-        {
-          img: 'https://susi.pizza/wp-content/uploads/2022/05/bolgarskaya_optimized-300x300.png',
-          name: 'Ассорти',
-          prise: '₽510.00',
-          ID: 2,
-        },
-        {
-          img: 'https://susi.pizza/wp-content/uploads/2022/05/bolgarskaya_optimized-300x300.png',
-          name: 'Ассорти',
-          prise: '₽510.00',
-          ID: 3,
-        },
-        {
-          img: 'https://susi.pizza/wp-content/uploads/2022/05/bolgarskaya_optimized-300x300.png',
-          name: 'Ассорти',
-          prise: '₽510.00',
-          ID: 4,
-        }
-      ]
     }
   },
   deactivated() {
     this.$store.dispatch('deleteSelectProducts')
+  },
+  methods: {
+    addOrders(orders){
+      this.$store.dispatch('addOrders', Array(Number(this.quantity)).fill(orders))
+    }
   }
 }
 </script>

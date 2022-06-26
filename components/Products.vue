@@ -8,7 +8,7 @@
         />
         <div class="product-info">
           <div class="product-name">{{ item.name }}</div>
-          <div class="product-prise">{{ item.prise }}</div>
+          <div class="product-prise">₽{{ item['base-price'] }}</div>
           <div class="product-bascet" @click="addOrder(item)">В корзину</div>
         </div>
       </div>
@@ -112,7 +112,7 @@ export default {
       return arr;
     },
     addOrder(order) {
-      this.$store.dispatch('addOrder', order);
+      this.$store.dispatch('addOrder', order)
     },
   },
 };

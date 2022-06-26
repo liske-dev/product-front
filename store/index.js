@@ -9,7 +9,21 @@ export const getters = {
     return state.orderList.length
   },
   orderList: state => {
-    return state.orderList
+    const numberRepet = state.orderList.reduce((acc, item) => {
+      acc[item.id] = acc[item.id] ? acc[item.id] + 1 : 1
+      return acc;
+    }, {})
+    const passId = []
+    const arrRepet = state.orderList.map(item=>{
+      if(Object.keys(numberRepet).includes(item.id) && !passId.includes(item.id)) {
+        passId.push(item.id)
+        item.numberRepet = numberRepet[item.id]
+        return item
+      }
+    })
+    const result = arrRepet.filter(item=> item!==undefined)
+    console.log(result)
+    return result
   },
   costAllOrders: state => {
     let sum = 0
@@ -29,6 +43,9 @@ export const getters = {
 export const mutations = {
   ADD_ORDER(state, order) {
     state.orderList.push(order)
+  },
+  ADD_ORDERS(state, orders) {
+    state.orderList.push(...orders)
   },
   DELETE_ORDER(state, idOrder) {
     state.orderList = state.orderList.filter(elem => elem.id != idOrder)
@@ -52,6 +69,9 @@ export const mutations = {
 export const actions = {
   addOrder({ commit }, order) {
     commit('ADD_ORDER', order)
+  },
+  addOrders({commit}, orders){
+    commit('ADD_ORDERS', orders)
   },
   deleteOrder({ commit }, idOrder) {
     commit('DELETE_ORDER', idOrder)

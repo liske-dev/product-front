@@ -15,7 +15,7 @@
             <img class="basket-drawer-info-img" :src="item.images"  width="50" height="50"/>
             <div class="basket-drawer-info-item">
               <div class="basket-drawer-info-name">{{item.name}}</div>
-              <div class="basket-drawer-info-prise">{{item.prise}}</div>
+              <div class="basket-drawer-info-prise">{{item.numberRepet}} × ₽{{item['base-price']}}</div>
             </div>
             <button class="basket-drawer-info-closed" @click="handlerDeleteOrder(item.id)">
               <img src="@/assets/svg/closed.svg" width="12" height="12" alt="bascet" />
