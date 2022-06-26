@@ -33,7 +33,12 @@ export default {
     handlerOverflow(event){
       console.log(event)
     }
-  }
+  },
+  mounted(){
+    if(this.costAllOrders!==0) {
+      this.$nuxt.$router.replace({ path: '/'})
+    }
+  },
 }
 </script>
 <style scoped>
