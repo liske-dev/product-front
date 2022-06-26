@@ -12,12 +12,12 @@
         <div class="basket-drawer-null" v-if="countOfOrders==0">Корзина пуста</div>
         <div class="basket-drawer-full" v-else>
           <div class="basket-drawer-items" v-for="(item, index) in orderList" :key="index">
-            <img class="basket-drawer-info-img" :src="item.img"  width="50" height="50"/>
+            <img class="basket-drawer-info-img" :src="item.images"  width="50" height="50"/>
             <div class="basket-drawer-info-item">
               <div class="basket-drawer-info-name">{{item.name}}</div>
               <div class="basket-drawer-info-prise">{{item.prise}}</div>
             </div>
-            <button class="basket-drawer-info-closed" @click="handlerDeleteOrder(item.ID)">
+            <button class="basket-drawer-info-closed" @click="handlerDeleteOrder(item.id)">
               <img src="@/assets/svg/closed.svg" width="12" height="12" alt="bascet" />
             </button>
           </div>

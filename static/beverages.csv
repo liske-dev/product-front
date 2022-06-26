@@ -1,0 +1,15 @@
+﻿id,type,articul,name,published,recommended?,visibility,short-description,description,discount-start-date,discount-end-date,tax-status,tax-class,stock?,reserves,amount-small-stocks,possible-pre-order?,sold-individually?,weight,length,width,height,allow-reviews-customers?,purchase-note,promotion-price,base-price,categories,tags,shipping-class,images,download-limit,days-loading-time,parental,grouped-products,upseil,crossels,url,button-text,position
+180,simple,606,"BonAqua 1 литр, газированная",1,0,visible,,,,,taxable,,1,,,0,0,,,,,1,,,60,Напитки,,,https://susi.pizza/wp-content/uploads/2022/05/ggy-ei_nqwg.jpg,,,,,,,,,0
+188,simple,607,"BonAqua 1 литр, не газированная",1,0,visible,,,,,taxable,,1,,,0,0,,,,,1,,,60,Напитки,,,https://susi.pizza/wp-content/uploads/2022/05/gsf0fvwjqws.jpg,,,,,,,,,0
+189,simple,612,"Coca-Cola 0,33 литра",1,0,visible,,,,,taxable,,1,,,0,0,,,,,1,,,40,Напитки,,,https://susi.pizza/wp-content/uploads/2022/05/yjwaxqbfuhc.jpg,,,,,,,,,0
+190,simple,601,"Coca-Cola 0,5 литра",1,0,visible,,,,,taxable,,1,,,0,0,,,,,1,,,60,Напитки,,,https://susi.pizza/wp-content/uploads/2022/05/4iymqfuwvbg.jpg,,,,,,,,,0
+191,simple,602,"Coca-Cola 0,9 литра",1,0,visible,,,,,taxable,,1,,,0,0,,,,,1,,,75,Напитки,,,https://susi.pizza/wp-content/uploads/2022/05/5gxuaamrjgy.jpg,,,,,,,,,0
+192,simple,609,"Coca-Cola 2 литра",1,0,visible,,,,,taxable,,1,,,0,0,,,,,1,,,120,Напитки,,,https://susi.pizza/wp-content/uploads/2022/05/pd-ghsjzd6w.jpg,,,,,,,,,0
+193,simple,614,"Fanta 0,9 литра",1,0,visible,"0,9 л",,,,taxable,,1,,,0,0,,,,,1,,,75,Напитки,,,https://susi.pizza/wp-content/uploads/2022/05/zflwi_1k-zq.jpg,,,,,,,,,0
+194,simple,610,"Fanta 0,5 литра",1,0,visible,,,,,taxable,,1,,,0,0,,,,,1,,,60,Напитки,,,https://susi.pizza/wp-content/uploads/2022/05/pu3ow7yjdn8.jpg,,,,,,,,,0
+201,simple,608,"Fanta 0,33 литра",1,0,visible,,,,,taxable,,1,,,0,0,,,,,1,,,40,Напитки,,,https://susi.pizza/wp-content/uploads/2022/05/img_9113.jpg,,,,,,,,,0
+202,simple,604,"Fanta 2 литра",1,0,visible,,,,,taxable,,1,,,0,0,,,,,1,,,120,Напитки,,,https://susi.pizza/wp-content/uploads/2022/05/eh445ln8vuq.jpg,,,,,,,,,0
+203,simple,611,"Sprite 0,33 литра",1,0,visible,"0,33",,,,taxable,,1,,,0,0,,,,,1,,,40,Напитки,,,https://susi.pizza/wp-content/uploads/2022/05/wcnq_urmtui.jpg,,,,,,,,,0
+204,simple,603,"Sprite 0,5 литра",1,0,visible,"0,5",,,,taxable,,1,,,0,0,,,,,1,,,60,Напитки,,,https://susi.pizza/wp-content/uploads/2022/05/6kovev_hupe.jpg,,,,,,,,,0
+205,simple,605,"Sprite 2 литра",1,0,visible,,,,,taxable,,1,,,0,0,,,,,1,,,120,Напитки,,,https://susi.pizza/wp-content/uploads/2022/05/ekpkmqrktiq.jpg,,,,,,,,,0
+206,simple,613,"Sprite 0,9 литра",1,0,visible,,,,,taxable,,1,,,0,0,,,,,1,,,75,Напитки,,,https://susi.pizza/wp-content/uploads/2022/05/ymzder5xnvy.jpg,,,,,,,,,0

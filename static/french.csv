@@ -1,0 +1,11 @@
+id,type,articul,name,published,recommended?,visibility,short-description,description,discount-start-date,discount-end-date,tax-status,tax-class,stock?,reserves,amount-small-stocks,possible-pre-order?,sold-individually?,weight,length,width,height,allow-reviews-customers?,purchase-note,promotion-price,base-price,categories,tags,shipping-class,images,download-limit,days-loading-time,parental,grouped-products,upseil,crossels,url,button-text,position
+21,simple,510,"Соус чесночный",1,0,visible,"Соус чесночный",,,,taxable,,1,,,0,0,,,,,1,,,15,"Закуски ФРИ",,,https://susi.pizza/wp-content/uploads/2022/05/1800_optimized.970.jpg,,,,,,,,,0
+22,simple,509,"Сырный соус",1,0,visible,"Сырный соус",,,,taxable,,1,,,0,0,,,,,1,,,15,"Закуски ФРИ",,,https://susi.pizza/wp-content/uploads/2022/05/sous-chesnochnyj-15.jpg,,,,,,,,,0
+23,simple,508,"Соус кисло-сладкий",1,0,visible,"Соус кисло-сладкий",,,,taxable,,1,,,0,0,,,,,1,,,15,"Закуски ФРИ",,,https://susi.pizza/wp-content/uploads/2022/05/¦b¦-tgtb-¦¦¦¬tb¦¬¦¦-tb¦¬¦-¦¦¦¦¬¦¦-15_optimized.jpg,,,,,,,,,0
+24,simple,507,"Соус кетчуп",1,0,visible,"Соус кетчуп",,,,taxable,,1,,,0,0,,,,,1,,,15,"Закуски ФРИ",,,https://susi.pizza/wp-content/uploads/2022/05/¦b¦-tgtb-¦¦¦tvtztg¦¬-15_optimized.jpg,,,,,,,,,0
+25,simple,506,"Соус барбекю",1,0,visible,"Соус барбекю",,,,taxable,,1,,,0,0,,,,,1,,,15,"Закуски ФРИ",,,https://susi.pizza/wp-content/uploads/2022/05/¦b¦-tgtb-¦s¦-ta¦-¦¦¦¦tmto-15_optimized.jpg,,,,,,,,,0
+26,simple,505,Начос,1,0,visible,Начос,,,,taxable,,1,,,0,0,,,,,1,,,70,"Закуски ФРИ",,,https://susi.pizza/wp-content/uploads/2022/05/nachos-scaled-1.jpg,,,,,,,,,0
+27,simple,504,"Луковые кольца",1,0,visible,"Луковые кольца",,,,taxable,,1,,,0,0,,,,,1,,,170,"Закуски ФРИ",,,https://susi.pizza/wp-content/uploads/2022/05/lukovye-kolcza-scaled-1.jpg,,,,,,,,,0
+28,simple,503,"Куриные наггетсы",1,0,visible,Наггетсы,,,,taxable,,1,,,0,0,,,,,1,,,170,"Закуски ФРИ",,,https://susi.pizza/wp-content/uploads/2022/05/naggetsy-scaled-1.jpg,,,,,,,,,0
+29,simple,502,"Картошка фри",1,0,visible,"Картошка фри",,,,taxable,,1,,,0,0,,,,,1,,,70,"Закуски ФРИ",,,https://susi.pizza/wp-content/uploads/2022/05/kartoshka-scaled-1.jpg,,,,,,,,,0
+30,simple,501,Ассорти-Фри,1,0,visible,"Картошка фри, луковые кольца, начос, наггетсы ,",,,,taxable,,1,,,0,0,,,,,1,,,220,"Закуски ФРИ",,,https://susi.pizza/wp-content/uploads/2022/05/assorti-scaled-1.jpg,,,,,,,,,0

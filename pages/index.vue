@@ -1,8 +1,12 @@
 <template>
   <div class="main">
     <Header @bascet-show="handlerOverflow"/>
-    <Pizza/>
-    <Sets/>
+    <div class="main-body">
+      <div class="main-item" v-for="(item, index) in prodicts" :key="index">
+        <div class="h1 main-header" :id="item.type">{{item.title}}</div>
+          <Products :typeProduct="item.type"/>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -11,7 +15,16 @@ export default {
   name: 'IndexPage',
   data() {
     return {
-      setOverflow: 'auto'
+      setOverflow: 'auto',
+      prodicts: [
+        {title:'Пицца', type:'pizza'},
+        {title:'Сеты', type:'sets'},
+        {title:'Роллы', type:'rolls'},
+        {title:'Роллы темпура', type:'tempuraRolls'},
+        {title:'Запеченые роллы', type:'bakedRolls'},
+        {title:'Закуски фри', type:'french'},
+        {title:'Напитки', type:'beverages'}
+      ]
     }
   },
   methods: {
@@ -22,13 +35,18 @@ export default {
 }
 </script>
 <style>
-html {
-  scroll-behavior: smooth;
+.main-body {
+    max-width: 1290px;
+  background-color: white;
+  margin: auto;
+  margin-top: 160px;
+  border-radius: 4px;
+  padding: 32px;
+} 
+.main-item {
+  margin-bottom: 42px;
 }
-body {
-  background-color: #f7fafc ;
-  height: 100vh;
-  margin: 0;
-  /* overflow:  hidden; */
+.main-header {
+  text-align: center;
 }
 </style>

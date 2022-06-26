@@ -1,5 +1,6 @@
 export const state = () => ({
-  orderList: []
+  orderList: [],
+  selectedProduct: {}
 })
 
 export const getters = {
@@ -12,10 +13,13 @@ export const getters = {
   costAllOrders: state => {
     let sum = 0
     for(const elem of state.orderList){
-      sum += Number(elem.prise.slice(1))
+      sum += Number(elem['base-price'])
     }
     return sum
-  }
+  },
+  selectedProduct: state => {
+    return state.selectedProduct
+  },
 }
 
 export const mutations = {
@@ -23,7 +27,10 @@ export const mutations = {
     state.orderList.push(order)
   },
   DELETE_ORDER(state, idOrder) {
-    state.orderList = state.orderList.filter(elem => elem.ID != idOrder)
+    state.orderList = state.orderList.filter(elem => elem.id != idOrder)
+  },
+  ADD_SELECT_PRODUCT(state, selectProduct) {
+    state.selectedProduct = selectProduct
   }
 }
 
@@ -33,5 +40,8 @@ export const actions = {
   },
   deleteOrder({ commit }, idOrder) {
     commit('DELETE_ORDER', idOrder)
+  },
+  addSelectProduct({ commit }, selectProduct) {
+    commit('ADD_SELECT_PRODUCT', selectProduct)
   }
 }

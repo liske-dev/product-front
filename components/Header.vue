@@ -5,11 +5,11 @@
       <div class="header-menu">
         <button class="header-items"><a class="header-href" href="/#pizza">Пицца</a></button>
         <button class="header-items"><a class="header-href" href="/#sets">Сеты</a></button>
-        <button class="header-items" ><a class="header-href" href="/">Роллы</a></button>
-        <button class="header-items" ><a class="header-href" href="/">Темпура</a></button>
-        <button class="header-items" ><a class="header-href" href="/">Запечёные</a></button>
-        <button class="header-items" ><a class="header-href" href="/">Фри</a></button>
-        <button class="header-items" ><a class="header-href" href="/">Напитки</a></button>
+        <button class="header-items" ><a class="header-href" href="/#rolls">Роллы</a></button>
+        <button class="header-items" ><a class="header-href" href="/#tempuraRolls">Темпура</a></button>
+        <button class="header-items" ><a class="header-href" href="/#bakedRolls">Запечёные</a></button>
+        <button class="header-items" ><a class="header-href" href="/#french">Фри</a></button>
+        <button class="header-items" ><a class="header-href" href="/#beverages">Напитки</a></button>
         <button class="header-items header-bascet" @click="handlerBascetShow">
           Ваш заказ 
           <img class="header-bascet-logo" src="@/assets/svg/bascet.svg" width="19" height="19" alt="bascet" />

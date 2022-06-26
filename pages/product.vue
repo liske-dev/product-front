@@ -3,18 +3,18 @@
     <Header/>
     <div class="product-choice">
       <div class="product-preview">
-        <img :src="'https://susi.pizza/wp-content/uploads/2022/05/bolgarskaya_optimized-465x465.png'"/>
+        <img class="product-preview-img" :src="selectedProduct.images"/>
       </div>
       <div class="product-info">
-        <div class="product-title">Барбекю</div>
-        <div class="product-price">₽460.00</div>
-        <div class="product-description">Ветчина. охотничьи колбаски, маринованный огурец. соус BBQ . томатный соус, сыр</div>
+        <div class="product-title">{{selectedProduct.name}}</div>
+        <div class="product-price">₽{{selectedProduct['base-price']}}</div>
+        <div class="product-description">{{selectedProduct['short-description']}}</div>
         <div class="product-bascet">
           <input class="product-bascet-quantity" v-model="quantity" type="number" min="1" step="1" max inputmode="numeric"/>
           <button class="product-bascet-button">В корзину</button>
         </div>
-        <div class="product-article">Артикул: 712</div>
-        <div class="product-category">Категория: Пицца</div>
+        <div class="product-article">Артикул: {{selectedProduct.articul}}</div>
+        <div class="product-category">Категория: {{selectedProduct.categories}}</div>
       </div>
     </div>
     <div class="similar">
@@ -23,14 +23,19 @@
         <div v-for="(item, index) in items" :key="index">
           <img :src="item.img"/>
           <div class="similar-name">{{item.name}}</div>
-          <div class="similar-prise">{{item.prise}}</div>
+          <div class="similar-prise">{{item['base-price']}}</div>
         </div>
       </div>
     </div>
   </div>
 </template>
 <script>
+import { mapGetters } from 'vuex'
 export default {
+  name: 'product',
+  computed: {
+    ...mapGetters(['selectedProduct']),
+    },
   data(){
     return {
       quantity: 1,
@@ -62,7 +67,6 @@ export default {
       ]
     }
   }
-  
 }
 </script>
 <style scoped>
@@ -81,12 +85,14 @@ export default {
   margin-left: 24px;
   margin-right: 24px;
 }
-
 .product-preview {
   width: 50%;
   margin:auto;
 }
-
+.product-preview-img {
+  width: 465px;
+  height: 465px;
+}
 .product-info {
   margin-top: 17px;
   width: 50%;
