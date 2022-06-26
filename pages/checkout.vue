@@ -78,8 +78,6 @@
         </div>
       </div>
     </div>
-    <!-- <Pizza/>
-    <Sets/> -->
   </div>
 </template>
 
@@ -209,12 +207,6 @@ input:focus {
 .checkout-payment-address {
   display: flex;
   flex-direction: column;
-}
-.checkout-payment-house {
-
-}
-.checkout-payment-house-extra {
-
 }
 textarea {
   padding: 8px;

@@ -58,7 +58,15 @@ export default {
   methods: {
     redirectProduct(selectProduct){
       this.$store.dispatch('addSelectProduct', selectProduct)
+      this.$store.dispatch('addSimilarProduct', this.getRandomArrayElement(this.items, 4))
       this.$nuxt.$router.replace({ path: '/product' })
+    },
+    getRandomArrayElement(arr, numberElem){
+      const result = []
+      for (let i = 0; i< numberElem; i++ ){
+        result.push(arr[Math.floor(Math.random()*arr.length)])
+      }
+      return result
     },
     processingRequest(httpRequest) {
       if (httpRequest.readyState == 4) {
@@ -110,9 +118,6 @@ export default {
 };
 </script>
 <style scoped>
-.product {
-
-}
 .product-title {
   margin-bottom: 20px;
   text-align: center;

@@ -20,10 +20,10 @@
     <div class="similar">
       <div class="similar-title h2">Похожие товары</div>
       <div class="similar-body">
-        <div v-for="(item, index) in items" :key="index">
-          <img :src="item.img"/>
+        <div v-for="(item, index) in similarProducts" :key="index">
+          <img class="similar-img" :src="item.images"/>
           <div class="similar-name">{{item.name}}</div>
-          <div class="similar-prise">{{item['base-price']}}</div>
+          <div class="similar-prise">₽{{item['base-price']}}</div>
         </div>
       </div>
     </div>
@@ -34,7 +34,7 @@ import { mapGetters } from 'vuex'
 export default {
   name: 'product',
   computed: {
-    ...mapGetters(['selectedProduct']),
+    ...mapGetters(['selectedProduct', 'similarProducts']),
     },
   data(){
     return {
@@ -66,6 +66,9 @@ export default {
         }
       ]
     }
+  },
+  deactivated() {
+    this.$store.dispatch('deleteSelectProducts')
   }
 }
 </script>
@@ -148,6 +151,10 @@ export default {
 .similar-title {
   margin-bottom: 14px;
 }
+.similar-img {
+  width: 300px;
+  height: 300px;
+}
 .similar-name {
   margin-top:16px;
   margin-left:16px;
@@ -161,5 +168,4 @@ export default {
   font-weight: 400;
   color: rgb(45, 55, 72);
 }
-
 </style>

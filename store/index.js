@@ -1,5 +1,6 @@
 export const state = () => ({
   orderList: [],
+  similarProducts: [],
   selectedProduct: {}
 })
 
@@ -20,6 +21,9 @@ export const getters = {
   selectedProduct: state => {
     return state.selectedProduct
   },
+  similarProducts: state => {
+    return state.similarProducts
+  }
 }
 
 export const mutations = {
@@ -31,6 +35,17 @@ export const mutations = {
   },
   ADD_SELECT_PRODUCT(state, selectProduct) {
     state.selectedProduct = selectProduct
+  },
+  ADD_SIMILAR_PRODUCTS(state, similiarProduct) {
+    state.similarProducts = similiarProduct
+  },
+  DELETE_SELECT_PRODUCT(state) {
+    state.selectedProduct = {}
+    console.log('delete selectedProduct')
+  },
+  DELETE_SIMILAR_PRODUCTS(state) {
+    state.similarProducts = {}
+    console.log('delete similarProducts')
   }
 }
 
@@ -43,5 +58,12 @@ export const actions = {
   },
   addSelectProduct({ commit }, selectProduct) {
     commit('ADD_SELECT_PRODUCT', selectProduct)
+  },
+  addSimilarProduct({ commit }, similiarProducts) {
+    commit('ADD_SIMILAR_PRODUCTS', similiarProducts)
+  },
+  deleteSelectProducts({ commit }) {
+    commit('DELETE_SELECT_PRODUCT')
+    commit('DELETE_SIMILAR_PRODUCTS')
   }
 }
