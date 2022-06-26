@@ -1,3 +1,4 @@
+import lodashClonedeep from 'lodash.clonedeep'
 export const state = () => ({
   orderList: [],
   similarProducts: [],
@@ -14,7 +15,8 @@ export const getters = {
       return acc;
     }, {})
     const passId = []
-    const arrRepet = state.orderList.map(item=>{
+    const cloneOrderList = lodashClonedeep(state.orderList)
+    const arrRepet = cloneOrderList.map((item)=>{
       if(Object.keys(numberRepet).includes(item.id) && !passId.includes(item.id)) {
         passId.push(item.id)
         item.numberRepet = numberRepet[item.id]
@@ -22,7 +24,6 @@ export const getters = {
       }
     })
     const result = arrRepet.filter(item=> item!==undefined)
-    console.log(result)
     return result
   },
   costAllOrders: state => {

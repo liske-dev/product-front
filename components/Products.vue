@@ -72,9 +72,8 @@ export default {
       if (httpRequest.readyState == 4) {
         if (httpRequest.status == 200) {
           this.items = this.csvToArray(httpRequest.responseText)
-          console.log("request successful")
         } else {
-          console.log("request error")
+          console.log("request csv error")
         }
       }
     },

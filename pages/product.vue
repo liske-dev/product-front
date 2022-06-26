@@ -32,7 +32,7 @@
 <script>
 import { mapGetters } from 'vuex'
 export default {
-  name: 'product',
+  name: 'IndexProduct',
   computed: {
     ...mapGetters(['selectedProduct', 'similarProducts']),
     },
@@ -41,9 +41,10 @@ export default {
       quantity: 1,
     }
   },
-  deactivated() {
-    this.$store.dispatch('deleteSelectProducts')
-  },
+  // deactivated() {
+  //   console.log('!')
+  //   this.$store.dispatch('deleteSelectProducts')
+  // },
   methods: {
     addOrders(orders){
       this.$store.dispatch('addOrders', Array(Number(this.quantity)).fill(orders))

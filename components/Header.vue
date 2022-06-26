@@ -3,13 +3,13 @@
     <div class="header-container">
       <div class="header-logo">Суши Пицца</div>
       <div class="header-menu">
-        <button class="header-items"><a class="header-href" href="/#pizza">Пицца</a></button>
-        <button class="header-items"><a class="header-href" href="/#sets">Сеты</a></button>
-        <button class="header-items" ><a class="header-href" href="/#rolls">Роллы</a></button>
-        <button class="header-items" ><a class="header-href" href="/#tempuraRolls">Темпура</a></button>
-        <button class="header-items" ><a class="header-href" href="/#bakedRolls">Запечёные</a></button>
-        <button class="header-items" ><a class="header-href" href="/#french">Фри</a></button>
-        <button class="header-items" ><a class="header-href" href="/#beverages">Напитки</a></button>
+        <button class="header-items"><NuxtLink class="header-href" to="/#pizza">Пицца</NuxtLink></button>
+        <button class="header-items"><NuxtLink class="header-href" to="/#sets">Сеты</NuxtLink></button>
+        <button class="header-items" ><NuxtLink class="header-href" to="/#rolls">Роллы</NuxtLink></button>
+        <button class="header-items" ><NuxtLink class="header-href" to="/#tempuraRolls">Темпура</NuxtLink></button>
+        <button class="header-items" ><NuxtLink class="header-href" to="/#bakedRolls">Запечёные</NuxtLink></button>
+        <button class="header-items" ><NuxtLink class="header-href" to="/#french">Фри</NuxtLink></button>
+        <button class="header-items" ><NuxtLink class="header-href" to="/#beverages">Напитки</NuxtLink></button>
         <button class="header-items header-bascet" @click="handlerBascetShow">
           Ваш заказ 
           <img class="header-bascet-logo" src="@/assets/svg/bascet.svg" width="19" height="19" alt="bascet" />

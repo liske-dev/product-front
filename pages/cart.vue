@@ -4,28 +4,20 @@
     <div class="cart-title h1">Корзина</div>
     <div class="cart-orders">
       <div class="cart-entry">
-        <div class="cart-total">
-          <div class="h2">Итог корзины</div>
-          <div class="cart-total-items">
-            <div class="cart-total-item cart-total-item-one h3">Товар</div>
-            <div class="cart-total-item h3">Цена</div>
-            <div class="cart-total-item h3">Количество</div>
-            <div class="cart-total-item h3">Подытог</div>
-          </div>
-        </div>
-        <div class="cart-sum">
-          <div class="h2">Сумма заказов</div>
-        </div>
+        <Orderlist />
+        <AmountOrders />
       </div>
     </div>
-    <!-- <Pizza/>
-    <Sets/> -->
   </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 export default {
-  name: 'IndexPage',
+  name: 'IndexCart',
+  computed: {
+    ...mapGetters(['orderList']),
+  },
   data() {
     return {
       setOverflow: 'auto'
@@ -38,15 +30,7 @@ export default {
   }
 }
 </script>
-<style>
-html {
-  scroll-behavior: smooth;
-}
-body {
-  margin: 0;
-  background-color: rgb(247, 250, 252);
-  /* overflow:  hidden; */
-}
+<style scoped>
 .cart-title {
   display: flex;
   background-color: #edf2f7 ;
@@ -67,21 +51,5 @@ body {
   display: flex;
   background-color: white;
   padding: 32px;
-}
-.cart-total-items {
-  display:flex;
-  position: relative;
-  width: 782px;
-  margin-right: 42px;
-  border-bottom: 1px solid #cbd5e0;
-  justify-content: flex-end;
-}
-.cart-total-item-one {
-  position: absolute;
-  left: 0;
-}
-.cart-total-item {
-  padding: 9px 12px;
-  width: 176px;
 }
 </style>

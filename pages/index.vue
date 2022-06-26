@@ -34,7 +34,7 @@ export default {
   }
 }
 </script>
-<style>
+<style scoped>
 .main-body {
     max-width: 1290px;
   background-color: white;
