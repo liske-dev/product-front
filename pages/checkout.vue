@@ -281,24 +281,6 @@ textarea:focus {
   font-weight: 400;
   color: rgb(45, 55, 72);
 }
-.checkout-sum-order-button {
-  margin-top: 32px;
-  margin-bottom: 17px;
-  padding: 6px;
-  font-size: 17px;
-  font-weight: 400;
-  border: 0;
-  background-color: #2B6CB0;
-  border-radius: 4px;
-  color: white;
-  height: 40px;
-  cursor: pointer;
-  width: 100%;
-}
-.checkout-sum-order-button:hover {
-  background-color: #215387;
-  cursor: pointer;
-}
 a {
   color: #2B6CB0;
   cursor: pointer;
@@ -315,23 +297,6 @@ a {
   font-size: 17px;
   font-weight: 400;
   color: rgb(45, 55, 72);
-}
-.checkout-orders-coupon-button {
-  margin-bottom: 17px;
-  padding: 7px 17px;
-  font-size: 17px;
-  font-weight: 400;
-  border: 0;
-  background-color: #2B6CB0;
-  border-radius: 4px;
-  color: white;
-  height: 40px;
-  cursor: pointer;
-  width: 176px;
-}
-.checkout-orders-coupon-button:hover {
-  background-color: #215387;
-  cursor: pointer;
 }
 .checkout-orders-coupon-input {
   display: flex;

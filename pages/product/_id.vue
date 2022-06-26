@@ -128,24 +128,6 @@ export default {
   border-color: #718096;
   outline: none;
 }
-.product-bascet-button {
-  height: 42px;
-  line-height: 40px;
-  padding: 0 13px;
-  text-align: center;
-  font-size: 17px;
-  font-weight: 400;
-  color: white;
-  cursor: pointer;
-  border-radius: 3px;
-  background-color: #2b6cb0;
-  border: 0;
-}
-.product-article {
-  color: rgb(113, 128, 150);
-  font-size: 11px;
-  font-weight: 700;
-}
 .product-category {
   color: rgb(113, 128, 150);
   font-size: 11px;

@@ -158,34 +158,4 @@ export default {
   margin-top: 17px;
   margin-bottom: 17px;
 }
-.basket-drawer-review {
-  padding: 6px;
-  margin-bottom: 5px;
-  font-size: 17px;
-  font-weight: 400;
-  border: 0;
-  background-color: white;
-  color:#2D3748;
-  border-radius: 4px;
-  height: 40px;
-  cursor: pointer;
-}
-.basket-drawer-review:hover {
-  color: #0693e3;
-}
-.basket-drawer-ordering {
-  padding: 6px;
-  font-size: 17px;
-  font-weight: 400;
-  border: 0;
-  background-color: #2B6CB0;
-  border-radius: 4px;
-  color: white;
-  height: 40px;
-  cursor: pointer;
-}
-.basket-drawer-ordering:hover {
-  background-color: #215387;
-  cursor: pointer;
-}
 </style>
