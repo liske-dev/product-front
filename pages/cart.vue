@@ -16,11 +16,16 @@ import { mapGetters } from 'vuex'
 export default {
   name: 'IndexCart',
   computed: {
-    ...mapGetters(['orderList']),
+    ...mapGetters(['orderList', 'costAllOrders']),
   },
   data() {
     return {
       setOverflow: 'auto'
+    }
+  },
+  mounted(){
+    if(this.costAllOrders===0) {
+      this.$nuxt.$router.replace({ path: '/empty'})
     }
   },
   methods: {

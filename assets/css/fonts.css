@@ -6,6 +6,11 @@ html {
   font-weight: 700;
   color:rgb(26, 32, 44);
 }
+.h1-grey {
+  font-size: 34px;
+  font-weight: 700;
+  color:rgb(113, 128, 150);
+}
 .h2 {
   font-size: 28px;
   font-weight: 700;

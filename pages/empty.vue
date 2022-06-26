@@ -4,23 +4,12 @@
     <div class="checkout-title">Оформление заказа</div>
     <div>
       <div class="checkout-orders">
-        <div class="checkout-orders-coupon-container">
-          <div class="checkout-orders-coupon">
-            Есть купон?<a @click="cupon=true"> Нажмите, чтобы ввести код</a>
-          </div>
-          <div class="checkout-orders-coupon-body" v-if="cupon">
-            <div class="checkout-orders-coupon-title">
-              Если у вас есть код купона, укажите его ниже.
-            </div>
-            <div class="checkout-orders-coupon-input">
-              <input class="checkout-orders-coupon-inner"/>
-              <button class="checkout-orders-coupon-button">Применить купон</button>
-            </div>
-          </div>
+        <div class="checkout-orders-coupon">
+          Оформление заказа не доступно, пока ваша корзина пуста.
         </div>
-        <div class="checkout-entry">
-          <Payment />
-          <YourOrder />
+        <div class="checkout-orders-body">
+          <div class="checkout-orders-title h1-grey">Ваша корзина пока пуста</div>
+          <button class="product-bascet-button" @click="$nuxt.$router.replace({ path: '/'})">Вернуться в магазин</button>
         </div>
       </div>
     </div>
@@ -38,11 +27,6 @@ export default {
     return {
       cupon: false,
       setOverflow: 'auto'
-    }
-  },
-  mounted(){
-    if(this.costAllOrders===0) {
-      this.$nuxt.$router.replace({ path: '/empty'})
     }
   },
   methods: {
@@ -110,5 +94,12 @@ export default {
 .checkout-orders-coupon-inner {
   width: 550px;
   margin-right: 64px;
+}
+.checkout-orders-body {
+  text-align: center;
+}
+.checkout-orders-title {
+  margin-top: 80px;
+  margin-bottom: 24px;
 }
 </style>
